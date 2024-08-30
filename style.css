@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/Lato/Lato-Bold.ttf");
+    
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "OpenSans";
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lato";    
+}
+
+.mainpadding {
+    padding: 20px 16px;    
+}
+
+body>header {
+    text-align: center;
+    background-color: bisque;
+    padding: 50px 15px;
+}
+
+body>header>h1 {    
+    padding: 20px 15px;
+}
