@@ -6,32 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Olaf Deuper">
     <meta name="description" content="Exercises on html">
-    <link rel="stylesheet" href="https://unpkg.com/modern-normalize.css@2.0.0/modern-normalize.css">
-
+    <link rel="preconnect" href="https://fonts.bunny.net">    
+    <link href="https://fonts.bunny.net/css?family=barlow-condensed:300,400,500,600,700,800,900|encode-sans-condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Curriculum vitae Olaf Deuper</title>
 </head>
 
 <body>
-    <header class="mainpadding">
-        <aside>
-            <img src="./assets/HireMe.png" alt="A hire me badge in the design of the css3 logo.">
+    <header class="mainheader">
+        <aside >
+            <img class="hire-batch" src="./assets/HireMe.png" alt="A hire me badge in the design of the css3 logo.">
         </aside>
-        <h1>Olaf Deuper</h1>
-        <p>I am a web frontend developer in training</p>
-        <nav><a href="#profile">Profile</a><a href="#experiences">Experiences</a><a href="#skills">Skills</a><a
-                href="#contact">Contact</a></nav>
+        <div class="mainheading">
+            <h1>Olaf Deuper</h1>
+            <p>A web frontend developer <span>in training</span></p>
+        </div>
+        
     </header>
-    <main class="mainpadding">
-        <article>
-            <h2 id="profile">Profile</h2>
+    <main class="main">
+           
+        <a class="main-link" id="profile-link" href="#profile">Profile</a>
+        <a class="main-link" id="experiences-link" href="#experiences">Experiences</a>
+        <a class="main-link" id="skills-link" href="#skills">Skills</a>
+        <a class="main-link" id="contact-link" href="#contact">Contact</a>        
+        
+        <h2 class="profile-header article-header">Profile</h2>
+        
+        <article class="profile main-article">            
             <p>I live in the Cologne area.</p>
             <p>For the last 10 years I have been working as a curative teacher in Wuppertal
                 and have been running an institution for mentally handicapped people.</p>
-            <p> At the moment I am working <strong>hard</strong> to improve my skills in <i>web development</i>.</p>
+            <p> At the moment I am working hard to improve my skills in <i>web development</i>.</p>
         </article>
-        <article>
-            <h2 id="experiences">Experiences</h2>
+            
+        <h2 id="experiences"class="experiences-header article-header">Experiences</h2>
+
+        <article class="experiences main-article">            
             <section>
                 <header>
                     <h3>Embedded C Coding</h3>
@@ -47,7 +57,7 @@
             </section>
             <section>
                 <header>
-                    <h3>Developing flight instruments for MS Flight Simulator</h3>
+                    <h3>Godot Game Coding</h3>
                     <p>For the last 6 months</p>
                 </header>
                 <p>
@@ -55,10 +65,12 @@
                     et officiis nam quisquam alias quos labore possimus perspiciatis. Perferendis
                     ad officia animi facere quae ipsa eum a doloremque.
                 </p>
-            </section>
+            </section>            
         </article>
-        <article>
-            <h2 id="skills">Skills</h2>
+
+        <h2 id="skills" class="skills-header article-header">Skills</h2>
+
+        <article  class="skills main-article">            
             <section>
                 <h3>Technical skills</h3>
                 <ul>
@@ -76,17 +88,19 @@
                 </ul>
             </section>
         </article>
-        <article>
-            <h2 id="contact">Contact</h2>
-            <ol>
+
+        <h2 id="contact" class="contact-header">Contact</h2>
+
+        <article class="contact">
+            <menu class="contact-menu">
                 <li><a href="mailto:foofoo@foo.de">Mail: foofoo@foo.de</a></li>
                 <li><a href="tel:+49123456789">Telefon:+49 123 456 789</a></li>
-                <li>
-                    <address>Olaf Deuper <br>Fooweg 67 <br>012345 Footown <br>Germany</address>
-                </li>
-            </ol>
+                <li><address>Olaf Deuper, Fooweg 67, 012345 Footown, Germany</address>
+            </menu> 
         </article>
     </main>
+    <footer class="mainfooter">
+        <p>Did you like my CV?<a href="mailto:foofoo@foo.de">Contact me</a> </p>              
+    </footer>   
 </body>
-
 </html>
